@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Test Html</title>
+	<title>Utsav Shrestha</title>
 </head>
 <body>
-<div>
-	<p>
-	<ol>
-		<li>utsav</li>
-		<li>shresthaa</li>
-	</ol>
-	
-	</p>
-</div>
+	<p id="change">This is the test text</p>
+	<button type="button" onclick="change()" ondblclick="change2()">Click Me</button>
+	<button type="button" ondblclick="change2()">Double click me</button>
+	<script>
+	function change(){
+		document.getElementById("change").innerHTML=5+3;
+	}
+	function change2(){
+		document.getElementById('change').innerHTML="hey hey hey";
+	}
+	</script>	
 </body>
 </html>
